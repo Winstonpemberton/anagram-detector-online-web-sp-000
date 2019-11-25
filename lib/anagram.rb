@@ -1,5 +1,5 @@
 # Your code goes here!
-class Anagram 
+class Anagram
   attr_accessor :anagram_word
 
   def initialize(anagram_word)
@@ -8,7 +8,7 @@ class Anagram
 
   def match(anagram_list)
 
-    anagram_list.find_all do |word| 
+    anagram_list.find_all do |word|
       word.split('').sort == anagram_word.split('').sort
     end
   end
